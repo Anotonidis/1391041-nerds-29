@@ -8,7 +8,7 @@
 <body>
 	<header>
 		<nav>
-			<a class="main-header-logo">
+			<a href="index.html" class="main-header-logo">
 				<img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
 			</a>
 			<ul>
@@ -21,12 +21,23 @@
 		</nav>
 	</header>
 	<h1>Магазин готовых шаблонов</h1>
-	<section>
+<div class="wrapper">
+	
 		<div class="range">
+			<div class="price">
 			<h3>СТОИМОСТЬ:</h3>
-			<form action="#">
-				<input type="range" name="pricecounter" id="pricecounter" min=0 max=15000>
-			</form>
+			</div>
+			<div class="slider">
+				<div class="line">
+					<img src="./img/catalog/Rectangle 20.png" alt="">
+				</div>
+					<div class="dot1">
+				<img src="./img/catalog/Ellipse 3.png" alt="">
+					</div>
+					<div class="dot2">
+				<img src="./img/catalog/Ellipse 3.png" alt="">
+					</div>
+			</div>
 		</div>
 		<div class="grid">
 			<h3>СЕТКА:</h3>
@@ -49,18 +60,17 @@
 		<div class="buttonshow">
 			<button type="button">Показать</button>
 		</div>
-	</section>
-	<section>
-		<div class="sort">
-			<h3>СОРТИРОВАТЬ:</h3>
-			<ul>
-				<li>По цене</li>
-				<li>По типу</li>
-				<li>По названию</li>
-			</ul>
-		</div>
-	</section>
-	<section class="examples">
+		<div class="container">
+			<div class="sort">
+				<h3>СОРТИРОВАТЬ:</h3>
+				<ul>
+					<li>По цене</li>
+					<li>По типу</li>
+					<li>По названию</li>
+				</ul>
+			</div>
+	
+	<div class="examples">
 		<div>
 			<a href="#">
 				<img src="./img/catalog/img-sedona 1.png" alt="">				
@@ -91,8 +101,8 @@
 				<img src="./img/catalog/img-kvast 1.png" alt="">				
 			</a>			
 		</div>
-	</section>
-	<section>
+	</div>
+	<div>
 		<ul>
 			<li>
 				<a>1</a>
@@ -107,7 +117,9 @@
 				<a href="#">Следующая</a>
 			</li>
 		</ul>
-	</section>
+	</div>
+</div>
+</div>
 	<section class="writeus">
 		<h4>NЁRDS DESIGN STUDIO</h4>
 		<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
