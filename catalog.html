@@ -1,152 +1,157 @@
 <!DOCTYPE html>
 <html lang="en">
-   <head>
-      <meta charset="UTF-8" />
-      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-      <title>HTML Academy: Нёрдс</title>
-   </head>
-   <body>
-      <header>
-         <nav>
-            <a href="index.html" class="main-header-logo">
-               <img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds" />
-            </a>
-            <ul>
-               <li><a href="#">Студия</a></li>
-               <li><a href="#">Клиенты</a></li>
-               <li><a href="#">Магазин</a></li>
-               <li><a href="#">Контакты</a></li>
-            </ul>
-            <a href="#">Корзина</a>
-         </nav>
-      </header>
-      <main>
-         <h1>Магазин готовых шаблонов</h1>
-         <div class="wrapper">
-            <div class="range">
-               <div class="price">
-                  <h3>СТОИМОСТЬ:</h3>
-               </div>
-               <div class="slider">
-                  <div class="line">
-                     <img src="./img/catalog/Rectangle 20.png" alt="" />
-                  </div>
-                  <div class="dot1">
-                     <img src="./img/catalog/Ellipse 3.png" alt="" />
-                  </div>
-                  <div class="dot2">
-                     <img src="./img/catalog/Ellipse 3.png" alt="" />
-                  </div>
-               </div>
-            
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <a href="index.html" class="main-header-logo">
+          <img
+            src="./img/nerds-logo.svg"
+            width="160"
+            height="65"
+            alt="Логотип nerds"
+          />
+        </a>
+        <ul>
+          <li><a href="#">Студия</a></li>
+          <li><a href="#">Клиенты</a></li>
+          <li><a href="#">Магазин</a></li>
+          <li><a href="#">Контакты</a></li>
+        </ul>
+        <a href="#">Корзина</a>
+      </nav>
+    </header>
+    <section class="main-title">
+      <h1>Магазин готовых шаблонов</h1>
+    </section>
+    <main>
+      <div class="wrapper">
+        <div class="form-holder">
+          <form class="form" action="">
+            <div class="price">
+              <h3>СТОИМОСТЬ:</h3>
+            </div>
+            <div class="slider">
+              <div class="line">
+                <img src="./img/catalog/Rectangle 20.png" alt="" />
+              </div>
+              <div class="dot1">
+                <img src="./img/catalog/Ellipse 3.png" alt="" />
+              </div>
+              <div class="dot2">
+                <img src="./img/catalog/Ellipse 3.png" alt="" />
+              </div>
+            </div>
             <div class="grid">
-               <h3>СЕТКА:</h3>
-               <form action="#">
-                  <p><input type="radio" checked />Адаптивная</p>
-                  <p><input type="radio" />Фиксированная</p>
-                  <p><input type="radio" />Резиновая</p>
-               </form>
+              <h3>СЕТКА:</h3>
+              <p><input type="radio" id='adapt' checked /><label for="adapt">Адаптивная</label></p>
+              <p><input type="radio" id='fixed'/><label for="fixed">Фиксированная</label></p>
+              <p><input type="radio" id='flex'/><label for="flex">Резиновая</label></p>
             </div>
             <div class="feature">
-               <h3>ОСОБЕННОСТИ:</h3>
-               <form action="">
-                  <p><input type="checkbox" name="slider" id="" checked />Слайдер</p>
-                  <p><input type="checkbox" name="advantages" id="" />Блок преимуществ</p>
-                  <p><input type="checkbox" name="news" id="" checked />Новости</p>
-                  <p><input type="checkbox" name="gallery" id="" />Галерея</p>
-                  <p><input type="checkbox" name="basket" id="" />Корзина</p>
-               </form>
+              <h3>ОСОБЕННОСТИ:</h3>
+              <p>
+                <input type="checkbox" name="slider" id="slider" checked /><label for="slider">Слайдер</label>
+              </p>
+              <p>
+                <input type="checkbox" name="advantages" id="advantages" /><label for="advantages">Блок преимуществ</label>
+              </p>
+              <p><input type="checkbox" name="news" id="news" checked /><label for="news"> Новости</label></p>
+              <p><input type="checkbox" name="gallery" id="gallery" /><label for="gallery">Галлерея</label></p>
+              <p><input type="checkbox" name="basket" id="basket" /><label for="basket">Корзина</label></p>
             </div>
             <div class="buttonshow">
-               <button type="button">Показать</button>
-				</div>
-				</div>
-            <div class="container">
-               <div class="sort">
-                  <h3>СОРТИРОВАТЬ:</h3>
-                  <ul>
-                     <li>По цене</li>
-                     <li>По типу</li>
-                     <li>По названию</li>
-                  </ul>
-               </div>
-
-               <div class="examples">
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-sedona 1.png" alt="" />
-                     </a>
-                  </div>
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-pink 1.png" alt="" />
-                     </a>
-                  </div>
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-barbershop 1.png" alt="" />
-                     </a>
-                  </div>
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-mishka 1.png" alt="" />
-                     </a>
-                  </div>
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-aplus 1.png" alt="" />
-                     </a>
-                  </div>
-                  <div>
-                     <a href="#">
-                        <img src="./img/catalog/img-kvast 1.png" alt="" />
-                     </a>
-                  </div>
-               </div>
-               <div>
-                  <ul>
-                     <li>
-                        <a>1</a>
-                     </li>
-                     <li>
-                        <a href="#">2</a>
-                     </li>
-                     <li>
-                        <a href="#">3</a>
-                     </li>
-                     <li>
-                        <a href="#">Следующая</a>
-                     </li>
-                  </ul>
-               </div>
+              <button type="button">Показать</button>
             </div>
-         </div>
-         <section class="writeus">
-            <h4>NЁRDS DESIGN STUDIO</h4>
-            <p>
-               191186, Санкт-Петербург,<br />
-               ул. Б. Конюшенная, д. 19/8<br />
-               тел. +7 (812) 275-75-75
-            </p>
-            <button class="submit">Напишите нам</button>
-         </section>
-      </main>
-      <footer>
-         <ul>
-            <li>
-               <a href="#">Вконтакте</a>
-            </li>
-            <li>
-               <a href="#">Фейсбук</a>
-            </li>
-            <li>
-               <a href="#">Инстаграм</a>
-            </li>
-         </ul>
-         <h4>
-            Давайте дружить, это выгодно!
-         </h4>
-         <p>Скидка 10% для друзей из социальных сетей</p>
-      </footer>
-   </body>
+          </form>
+        </div>
+        <div class="container">
+          <div class="sort">
+            <h3>СОРТИРОВАТЬ:</h3>
+            <ul>
+              <li>По цене</li>
+              <li>По типу</li>
+              <li>По названию</li>
+            </ul>
+          </div>
+          <div class="examples">
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-sedona 1.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-pink 1.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-barbershop 1.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-mishka 1.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-aplus 1.png" alt="" />
+              </a>
+            </div>
+            <div>
+              <a href="#">
+                <img src="./img/catalog/img-kvast 1.png" alt="" />
+              </a>
+            </div>
+          </div>
+          <div class="pagination">
+            <ul>
+              <li>
+                <a>1</a>
+              </li>
+              <li>
+                <a href="#">2</a>
+              </li>
+              <li>
+                <a href="#">3</a>
+              </li>
+              <li>
+                <a href="#">Следующая</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <section class="writeus">
+        <h4>NЁRDS DESIGN STUDIO</h4>
+        <p>
+          191186, Санкт-Петербург,<br />
+          ул. Б. Конюшенная, д. 19/8<br />
+          тел. +7 (812) 275-75-75
+        </p>
+        <button class="submit">Напишите нам</button>
+      </section>
+    </main>
+    <footer>
+      <ul>
+        <li>
+          <a href="#">Вконтакте</a>
+        </li>
+        <li>
+          <a href="#">Фейсбук</a>
+        </li>
+        <li>
+          <a href="#">Инстаграм</a>
+        </li>
+      </ul>
+      <h4>Давайте дружить, это выгодно!</h4>
+      <p>Скидка 10% для друзей из социальных сетей</p>
+    </footer>
+  </body>
 </html>
