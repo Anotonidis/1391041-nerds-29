@@ -2,38 +2,39 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>HTML Academy: Нёрдс</title>
+	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	 <link href="normalize.css" rel="stylesheet">
+	 <link href="./css/style.css" rel="stylesheet" >
+ 	 <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-    <header>
-      <nav>
-        <a href="index.html" class="main-header-logo">
-          <img
-            src="./img/nerds-logo.svg"
-            width="160"
-            height="65"
-            alt="Логотип nerds"
-          />
-        </a>
-        <ul>
-          <li><a href="#">Студия</a></li>
-          <li><a href="#">Клиенты</a></li>
-          <li><a href="#">Магазин</a></li>
-          <li><a href="#">Контакты</a></li>
-        </ul>
-        <a href="#">Корзина</a>
-      </nav>
-    </header>
-    <section class="main-title">
+	<header class="inner-header">
+		<nav class="inner-navigation">
+			<a class="inner-navigation-logo">
+				<img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
+			</a>
+			<ul class="inner-navigation-list">
+				<li class="inner-navigation-list__item"><a href="#">Студия</a></li>
+				<li class="inner-navigation-list__item"><a href="#">Клиенты</a></li>
+				<li class="inner-navigation-list__item"><a href="#">Магазин</a></li>
+				<li class="inner-navigation-list__item"><a href="#">Контакты</a></li>
+      </ul>
+			<a class="inner-navigation-basket" href="#">
+        <img src="./img/cart-icon.svg" alt="Корзина">
+      <span>Корзина</span>
+      </a>
+		</nav>
+		<section class="inner-title">
       <h1>Магазин готовых шаблонов</h1>
     </section>
+	</header>
+    
     <main>
       <div class="wrapper">
         <div class="form-holder">
           <form class="form" action="">
             <div class="price">
-              <h3>СТОИМОСТЬ:</h3>
+              <h3 class="price-title">СТОИМОСТЬ:</h3>
             </div>
             <div class="slider">
               <div class="line">
@@ -47,13 +48,13 @@
               </div>
             </div>
             <div class="grid">
-              <h3>СЕТКА:</h3>
+              <h3 class="grid-title">СЕТКА:</h3>
               <p><input type="radio" id='adapt' checked /><label for="adapt">Адаптивная</label></p>
               <p><input type="radio" id='fixed'/><label for="fixed">Фиксированная</label></p>
               <p><input type="radio" id='flex'/><label for="flex">Резиновая</label></p>
             </div>
             <div class="feature">
-              <h3>ОСОБЕННОСТИ:</h3>
+              <h3 class="feature-title">ОСОБЕННОСТИ:</h3>
               <p>
                 <input type="checkbox" name="slider" id="slider" checked /><label for="slider">Слайдер</label>
               </p>
@@ -61,21 +62,19 @@
                 <input type="checkbox" name="advantages" id="advantages" /><label for="advantages">Блок преимуществ</label>
               </p>
               <p><input type="checkbox" name="news" id="news" checked /><label for="news"> Новости</label></p>
-              <p><input type="checkbox" name="gallery" id="gallery" /><label for="gallery">Галлерея</label></p>
+              <p><input type="checkbox" name="gallery" id="gallery" /><label for="gallery">Галерея</label></p>
               <p><input type="checkbox" name="basket" id="basket" /><label for="basket">Корзина</label></p>
-            </div>
-            <div class="buttonshow">
-              <button type="button">Показать</button>
-            </div>
+            </div>            
+              <button class="buttonshow" type="button"><span class="btntextshow">Показать</span></button>            
           </form>
         </div>
         <div class="container">
           <div class="sort">
-            <h3>СОРТИРОВАТЬ:</h3>
-            <ul>
-              <li>По цене</li>
-              <li>По типу</li>
-              <li>По названию</li>
+            <h3 class="sort-title">СОРТИРОВАТЬ:</h3>
+            <ul class="sort-list">
+              <li class="sort-list__item"><a href="#">По цене</a></li>
+              <li class="sort-list__item"><a href="#">По типу</a></li>
+              <li class="sort-list__item"><a href="#">По названию</a></li>
             </ul>
           </div>
           <div class="examples">
@@ -111,47 +110,53 @@
             </div>
           </div>
           <div class="pagination">
-            <ul>
-              <li>
+            <ul class="pagination-list">
+              <li class="pagination-list__item">
                 <a>1</a>
               </li>
-              <li>
+              <li class="pagination-list__item">
                 <a href="#">2</a>
               </li>
-              <li>
+              <li class="pagination-list__item">
                 <a href="#">3</a>
               </li>
-              <li>
+              <li class="pagination-list__item">
                 <a href="#">Следующая</a>
               </li>
             </ul>
           </div>
         </div>
       </div>
-      <section class="writeus">
-        <h4>NЁRDS DESIGN STUDIO</h4>
-        <p>
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19/8<br />
-          тел. +7 (812) 275-75-75
-        </p>
-        <button class="submit">Напишите нам</button>
-      </section>
-    </main>
-    <footer>
-      <ul>
-        <li>
-          <a href="#">Вконтакте</a>
-        </li>
-        <li>
-          <a href="#">Фейсбук</a>
-        </li>
-        <li>
-          <a href="#">Инстаграм</a>
-        </li>
-      </ul>
-      <h4>Давайте дружить, это выгодно!</h4>
-      <p>Скидка 10% для друзей из социальных сетей</p>
-    </footer>
-  </body>
+      <section class="map">
+			<a href="#">
+				<img src="./img/map 1.png" alt="">
+			</a>
+		</section>
+		<section class="writeus">
+			<h4 class="writeus-title">NЁRDS DESIGN STUDIO</h4>
+			<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
+			<button class="writeus-button">Напишите нам</button>
+		</section>
+	</main>
+
+	<footer class="footer">
+		<section class="footer-social">
+		<ul class="footer-social-list">
+			<li>
+		 	 <a class="footer-social-list__item" href="#">Вконтакте</a>
+			</li>
+			<li>
+			  <a class="footer-social-list__item" href="#">Фейсбук</a>
+			</li>
+			<li>
+			  <a class="footer-social-list__item" href="#">Инстаграм</a>
+			</li>
+		 </ul>
+		</section>
+		<h4 class="footer-letfriend">
+			Давайте дружить, это выгодно!
+		</h4>
+		<p class="footer-discount">Скидка 10% для друзей из социальных сетей</p>
+	</footer>
+ </body>
 </html>

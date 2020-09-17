@@ -1,10 +1,12 @@
 :root {
-	--backgroundcolor-header: #EEEEEE;
+	--backgroundcolor: #EEEEEE;
 	--basic-black: #000000;
 	--button-text: #FFFFFF;
 	--button-red: #FB565A;
 	--button-green: #00CA74;
 	--button-yellow: #EFC849;
+	--grid-color: #283136;
+	--navlist-color: #FB565A;
 }
 
 body {
@@ -26,24 +28,28 @@ img {
 	height: auto;
 }
 
-.main-navigation {
-	background-color: var(--backgroundcolor-header);
+
+.main-header {
+	background-color: var(--backgroundcolor);
 }
 
 
-.mainsite-navigation-header, .basket-link {
+.main-navigation-list, .main-navigation-basket {
 	font-size: 16px;
 	line-height: 30px;
-	text-transform: uppercase;
-	font-weight: 500;
-	color:var(--basic-black);
+	text-transform: uppercase;	
+	color: var(--basic-black);
 	list-style: none;
 }
 
-.mainsite-navigation-header :hover {
-	color: #FB565A;
+.main-navigation-list :hover {
+	color: var(--navlist-color);
 }
 
+
+.main-navigation-basket :hover {
+	color: var(--navlist-color);
+} 
 
 .main-title-text {
 	font-size: 55px;
@@ -51,7 +57,7 @@ img {
 	font-weight: 500;
 }
 
-.button-more {
+.main-title-button {
 	font-weight: 500;
 	font-size: 16px;
 	line-height: 18px;
@@ -63,41 +69,40 @@ img {
 	text-transform: uppercase;
 }
 
-.services h3 {
+.web-title, .app-title, .present-title {
 	font-size: 24px;
 	line-height: 30px;
 	text-transform: uppercase;
 	font-weight: bold;
 }
 
-.services button {
+.web-button, .app-button, .present-button {
 	width: 160px;
 	height: 50px;
 	border-radius: 3px;
-	color: var(--button-text)
+	color: var(--button-text);
 	text-transform: uppercase;
-
 }
 
-.websites button {	
-	background: #FB565A;	
+.web-button {	
+	background: var(--navlist-color);	
 }
 
-.applications button {	
+.app-button {	
 	background: #00CA74;	
 }
 
-.presentations button {
+.present-button {
 	background: #EFC849;
 }
 
-.about-description h3 {
+.about-description__weare {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
 }
 
-.about-description h4 {
+.about-subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -107,7 +112,7 @@ img {
 	color: #283136;
 }
 
-.about-stats h4 {
+.accuracy-subtitle {
 	text-transform: uppercase;
 	font-weight: bold;
 }
@@ -124,15 +129,15 @@ img {
 	line-height: 40px;
 }
 
-.writeus h4 {
+.writeus-title {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
 }
 
-.writeus p {
+.writeus-title {
 	font-size: 16px;
-	line-height: 18px
+	line-height: 18px;
 }
 
 .writeus-button {
@@ -141,7 +146,7 @@ img {
 	background: #FB565A;
 	border-radius: 3px;
 	text-transform: uppercase;
-	color: var(--button-text)
+	color: var(--button-text);
 }
 
 .letfriend {
@@ -150,7 +155,7 @@ img {
 	line-height: 36px;
 }
 
-.socialsicon-list {
+.footer-socialwriteus-title-list {
 	list-style: none;
 }
 
@@ -158,4 +163,60 @@ img {
 	font-size: 16px;
 	line-height: 22px;
 	color: #444444;
+}
+
+/* inner page */
+
+.inner-header {
+	background: var(--backgroundcolor-header);
+}
+
+.inner-navigation-list, .inner-navigation-basket {
+	font-size: 16px;
+	line-height: 30px;
+	text-transform: uppercase;	
+	color: var(--basic-black);
+	list-style: none;
+}
+
+.price-title, .grid-title, .feature-title, .sort-title {
+	font-weight: bold;
+	font-size: 18px;
+	line-height: 30px;
+}
+
+.grid p {
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--grid-color);
+}
+
+.feature p {
+	font-size: 16px;
+	line-height: 19px;
+	color: var(--grid-color);
+}
+
+.buttonshow {
+	color: var(--backgroundcolor);
+	width: 260px;
+	height: 50px;
+	border-radius: 3px;
+}
+
+.btntextshow {
+	color: var(--basic-black);
+}
+
+.sort-list {
+	font-size: 14px;
+	line-height: 18px;
+	text-transform: uppercase;
+	list-style: none;
+}
+
+.pagination-list {
+	text-transform: uppercase;
+	color: var(--basic-black);
+	list-style: none;
 }
