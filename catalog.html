@@ -3,34 +3,36 @@
   <head>
     <meta charset="UTF-8" />
 	 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	 <link href="normalize.css" rel="stylesheet">
+	 <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+	 <link href="./css/normalize.css" rel="stylesheet">
 	 <link href="./css/style.css" rel="stylesheet" >
  	 <title>HTML Academy: Нёрдс</title>
   </head>
   <body>
-	<header class="inner-header">
-		<nav class="inner-navigation">
-			<a class="inner-navigation-logo">
+	<header class="main-header">
+		<nav class="main-navigation">
+			<a class="main-navigation-logo" href="index.html">
 				<img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
 			</a>
-			<ul class="inner-navigation-list">
-				<li class="inner-navigation-list__item"><a href="#">Студия</a></li>
-				<li class="inner-navigation-list__item"><a href="#">Клиенты</a></li>
-				<li class="inner-navigation-list__item"><a href="#">Магазин</a></li>
-				<li class="inner-navigation-list__item"><a href="#">Контакты</a></li>
-      </ul>
-			<a class="inner-navigation-basket" href="#">
+			<ul class="main-navigation-list">
+				<li class="main-navigation-list__item"><a href="#">Студия</a></li>
+				<li class="main-navigation-list__item"><a href="#">Клиенты</a></li>
+				<li class="main-navigation-list__item"><a href="#">Магазин</a></li>
+				<li class="main-navigation-list__item"><a href="#">Контакты</a></li>
+      	</ul>
+			<a class="main-navigation-basket" href="#">
         <img src="./img/cart-icon.svg" alt="Корзина">
-      <span>Корзина</span>
-      </a>
+			<span>Корзина</span>
+      	</a>
 		</nav>
-		<section class="inner-title">
-      <h1>Магазин готовых шаблонов</h1>
-    </section>
+			<div class="main-title-text">
+				<h2>Магазин готовых шаблонов</h2>
+			</div>
 	</header>
     
     <main>
       <div class="wrapper">
+			
         <div class="form-holder">
           <form class="form" action="">
             <div class="price">
@@ -49,9 +51,9 @@
             </div>
             <div class="grid">
               <h3 class="grid-title">СЕТКА:</h3>
-              <p><input type="radio" id='adapt' checked /><label for="adapt">Адаптивная</label></p>
-              <p><input type="radio" id='fixed'/><label for="fixed">Фиксированная</label></p>
-              <p><input type="radio" id='flex'/><label for="flex">Резиновая</label></p>
+              <p><input type="radio" id="adapt" checked /><label for="adapt">Адаптивная</label></p>
+              <p><input type="radio" id="fixed"/><label for="fixed">Фиксированная</label></p>
+              <p><input type="radio" id="flex"/><label for="flex">Резиновая</label></p>
             </div>
             <div class="feature">
               <h3 class="feature-title">ОСОБЕННОСТИ:</h3>
@@ -80,39 +82,39 @@
           <div class="examples">
             <div>
               <a href="#">
-                <img src="./img/catalog/img-sedona 1.png" alt="" />
+                <img src="./img/catalog/img-sedona.png" alt="Седона" />
               </a>
             </div>
             <div>
               <a href="#">
-                <img src="./img/catalog/img-pink 1.png" alt="" />
+                <img src="./img/catalog/img-pink.png" alt="Pink" />
               </a>
             </div>
             <div>
               <a href="#">
-                <img src="./img/catalog/img-barbershop 1.png" alt="" />
+                <img src="./img/catalog/img-barbershop.png" alt="Барбершоп" />
               </a>
             </div>
             <div>
               <a href="#">
-                <img src="./img/catalog/img-mishka 1.png" alt="" />
+                <img src="./img/catalog/img-mishka.png" alt="Mishka" />
               </a>
             </div>
             <div>
               <a href="#">
-                <img src="./img/catalog/img-aplus 1.png" alt="" />
+                <img src="./img/catalog/img-aplus.png" alt="А+" />
               </a>
             </div>
             <div>
               <a href="#">
-                <img src="./img/catalog/img-kvast 1.png" alt="" />
+                <img src="./img/catalog/img-kvast.png" alt="Крафтовый квас" />
               </a>
             </div>
           </div>
           <div class="pagination">
             <ul class="pagination-list">
               <li class="pagination-list__item">
-                <a>1</a>
+                <span>1</span>
               </li>
               <li class="pagination-list__item">
                 <a href="#">2</a>
@@ -129,7 +131,7 @@
       </div>
       <section class="map">
 			<a href="#">
-				<img src="./img/map 1.png" alt="">
+				<img src="./img/map.png" alt="Карта">
 			</a>
 		</section>
 		<section class="writeus">
