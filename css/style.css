@@ -7,6 +7,7 @@
 	--button-yellow: #EFC849;
 	--grid-color: #283136;
 	--navlist-color: #FB565A;
+	--footerdiscount-color: #444444;
 }
 
 body {
@@ -109,7 +110,7 @@ img {
 
 .order {
 	list-style: none;
-	color: #283136;
+	color: var(--grid-color);
 }
 
 .accuracy-subtitle {
@@ -143,7 +144,7 @@ img {
 .writeus-button {
 	width: 219px;
 	height: 50px;
-	background: #FB565A;
+	background: var(--navlist-color);
 	border-radius: 3px;
 	text-transform: uppercase;
 	color: var(--button-text);
@@ -162,7 +163,7 @@ img {
 .footer-discount {
 	font-size: 16px;
 	line-height: 22px;
-	color: #444444;
+	color: var(--footerdiscount-color);
 }
 
 /* inner page */
