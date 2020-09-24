@@ -20,6 +20,14 @@ body {
 	font-weight: 400;
 }
 
+.header-wrap {
+	background-color: var(--backgroundcolor);
+}
+
+.header-content {
+	width: 1157px;
+	margin: 0 auto;
+}
 
 a {
 	text-decoration: none;
@@ -31,19 +39,13 @@ img {
 }
 
 
-.main-header {
-	background-color: var(--backgroundcolor);
-}
 
 .main-navigation-list__item {
 	display: inline;
 	padding: 46px;
 }
 
-.main-title {
-	margin-left: 140px;
-	padding-top: 32px;
-}
+
 
 .main-navigation {
 	display: flex;
@@ -53,22 +55,21 @@ img {
 
 .main-navigation-logo {
 	padding-top: 49px;
-	padding-left: 140px;
+	
 }
 
 .buttonmore {
-	padding: 40px 0;
+	padding: 40px 0;	
 }
 
 
-.main-navigation-list {
-	margin-top: 80px;
-	
+.main-navigation-list {	
+	padding-top: 65px;
 }
 
 .main-navigation-basket {
 	margin-top: 82px;
-	margin-right: 140px;
+	
 }
 
 .main-navigation-list a, .main-navigation-basket {
@@ -112,7 +113,7 @@ img {
 }
 
 .services {
-	padding: 120px 200px 80px 140px;
+	padding: 120px 200px 80px 100px;
 	display: flex;
 	flex-direction: row;
 	justify-content: space-around;
@@ -150,7 +151,7 @@ img {
 	background: var(--button-yellow);
 }
 
-.about-description__weare {
+.about-description-weare {
 	font-weight: 500;
 	font-size: 45px;
 	line-height: 45px;
@@ -171,6 +172,20 @@ img {
 	font-weight: bold;
 }
 
+.about {
+	width: 1157px;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.stats-content {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;	
+}
+
 .about-stats p {
 	font-weight: bold;
 	font-size: 45px;
@@ -181,6 +196,27 @@ img {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 40px;
+}
+
+.customer-content {
+	width: 1157px;
+	margin: 0 auto;
+}
+
+.customers-logo {
+	display: flex;
+	flex-direction: row;	
+	justify-content: space-around;
+	margin: 0 auto;
+	margin-top: 100px;
+}
+
+.stats-content span {
+	margin-top: 5px;
+}
+
+.map {
+	margin-top: 100px;
 }
 
 .writeus-title {
@@ -209,9 +245,28 @@ img {
 	line-height: 36px;
 }
 
-.footer-socialwriteus-title-list {
+.footer-social-list {
 	list-style: none;
+	background-color: var(--backgroundcolor);			
 }
+
+.footer-content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.letfriend-content {
+	display: flex;
+	flex-direction: column;
+}
+
+
+.footer-letfriend-title {
+	font-weight: bold;
+	font-size: 36px;
+	line-height: 36px;
+}
+
 
 .footer-discount {
 	font-size: 16px;
