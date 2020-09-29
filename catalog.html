@@ -1,164 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-    <link href="./css/normalize.css" rel="stylesheet" />
-    <link href="./css/style.css" rel="stylesheet" />
-    <title>HTML Academy: Нёрдс</title>
-  </head>
 
-  <body class="page-body">
-    <header class="main-header">
-      <nav class="main-navigation">
-        <a class="main-navigation-logo" href="index.html">
-          <img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds" />
-        </a>
-        <ul class="main-navigation-list">
-          <li class="main-navigation-list__item"><a href="#">Студия</a></li>
-          <li class="main-navigation-list__item"><a href="#">Клиенты</a></li>
-          <li class="main-navigation-list__item"><a href="#">Магазин</a></li>
-          <li class="main-navigation-list__item"><a href="#">Контакты</a></li>
-        </ul>
-        <a class="main-navigation-basket" href="#">
-          <img src="./img/cart-icon.svg" alt="Корзина" />
-          <span>Корзина</span>
-        </a>
-      </nav>
-      <div class="main-title-text">
-        <h2>Магазин готовых шаблонов</h2>
-      </div>
-    </header>
+<head>
+	<meta charset="UTF-8" />
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
+	<link href="./css/normalize.css" rel="stylesheet" />
+	<link href="./css/style.css" rel="stylesheet" />
+	<title>HTML Academy: Нёрдс</title>
+</head>
 
-    <main>
-      <div class="wrapper">
-        <div class="form-holder">
-          <form class="form" action="">
-            <div class="price">
-              <h3 class="price-title">СТОИМОСТЬ:</h3>
-            </div>
-            <div class="slider">
-              <div class="line">
-                <img src="./img/catalog/Rectangle20.png" alt="" />
-              </div>
-              <div class="dot1">
-                <img src="./img/catalog/Ellipse3.png" alt="" />
-              </div>
-              <div class="dot2">
-                <img src="./img/catalog/Ellipse3.png" alt="" />
-              </div>
-            </div>
-            <div class="grid">
-              <h3 class="grid-title">СЕТКА:</h3>
-              <p><input type="radio" id="adapt" checked /><label for="adapt">Адаптивная</label></p>
-              <p><input type="radio" id="fixed" /><label for="fixed">Фиксированная</label></p>
-              <p><input type="radio" id="flex" /><label for="flex">Резиновая</label></p>
-            </div>
-            <div class="feature">
-              <h3 class="feature-title">ОСОБЕННОСТИ:</h3>
-              <p><input type="checkbox" name="slider" id="slider" checked /><label for="slider">Слайдер</label></p>
-              <p><input type="checkbox" name="advantages" id="advantages" /><label for="advantages">Блок преимуществ</label></p>
-              <p><input type="checkbox" name="news" id="news" checked /><label for="news"> Новости</label></p>
-              <p><input type="checkbox" name="gallery" id="gallery" /><label for="gallery">Галерея</label></p>
-              <p><input type="checkbox" name="basket" id="basket" /><label for="basket">Корзина</label></p>
-            </div>
-            <button class="buttonshow" type="button"><span class="btntextshow">Показать</span></button>
-          </form>
-        </div>
-        <div class="container">
-          <div class="sort">
-            <h3 class="sort-title">СОРТИРОВАТЬ:</h3>
-            <ul class="sort-list">
-              <li class="sort-list__item"><a href="#">По цене</a></li>
-              <li class="sort-list__item"><a href="#">По типу</a></li>
-              <li class="sort-list__item"><a href="#">По названию</a></li>
-            </ul>
-          </div>
-          <div class="examples">
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-sedona.png" alt="Седона" />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-pink.png" alt="Pink" />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-barbershop.png" alt="Барбершоп" />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-mishka.png" alt="Mishka" />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-aplus.png" alt="А+" />
-              </a>
-            </div>
-            <div>
-              <a href="#">
-                <img src="./img/catalog/img-kvast.png" alt="Крафтовый квас" />
-              </a>
-            </div>
-          </div>
-          <div class="pagination">
-            <ul class="pagination-list">
-              <li class="pagination-list__item">
-                <span>1</span>
-              </li>
-              <li class="pagination-list__item">
-                <a href="#">2</a>
-              </li>
-              <li class="pagination-list__item">
-                <a href="#">3</a>
-              </li>
-              <li class="pagination-list__item">
-                <a href="#">Следующая</a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <section class="map">
-        <a href="#">
-          <img src="./img/map.png" alt="Карта" />
-        </a>
-      </section>
-      <section class="writeus">
-        <h4 class="writeus-title">NЁRDS DESIGN STUDIO</h4>
-        <p>
-          191186, Санкт-Петербург,<br />
-          ул. Б. Конюшенная, д. 19/8<br />
-          тел. +7 (812) 275-75-75
-        </p>
-        <button class="writeus-button">Напишите нам</button>
-      </section>
-    </main>
+<body class="page-body">
+	<div class="header-wrap">
+		<header class="main-header">
+			<div class="header-content">
+				<nav class="main-navigation">
+					<a class="main-navigation-logo">
+						<img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
+					</a>
+					<div class="main-navigation-box">
+						<ul class="main-navigation-list">
+							<li class="main-navigation-list__item"><a href="#">Студия</a></li>
+							<li class="main-navigation-list__item"><a href="#">Клиенты</a></li>
+							<li class="main-navigation-list__item"><a href="catalog.html">Магазин</a></li>
+							<li class="main-navigation-list__item"><a href="#">Контакты</a></li>
+						</ul>
+					</div>
+					<a class="main-navigation-basket" href="#">
+						<img class="basketlogo" src="./img/cart-icon.svg" alt="Корзина">
+						<span>Корзина</span>
+					</a>
+				</nav>
+				<section class="main-title">
+					<h2 class="main-title-text">Магазин готовых шаблонов</h2>
+				</section>
+			</div>
+		</header>
+	</div>
+	<main>
+		<div class="wrapper">
+			<div class="sort-price">
+				<h3 class="price-title">СТОИМОСТЬ:</h3>
+				<h3 class="sort-title">СОРТИРОВАТЬ:</h3>
+				<ul class="sort-list">
+					<li class="sort-list__item"><a href="#">По цене</a></li>
+					<li class="sort-list__item"><a href="#">По типу</a></li>
+					<li class="sort-list__item"><a href="#">По названию</a></li>
+				</ul>
+			</div>
+			<div class="container">
+				<div class="form-holder">
+					<form class="form" action="">
+						<div class="slider">
+							<div class="line">
+								<img src="./img/catalog/Rectangle20.png" alt="" />
+							</div>
+							<div class="dot1">
+								<img src="./img/catalog/Ellipse3.png" alt="" />
+							</div>
+							<div class="dot2">
+								<img src="./img/catalog/Ellipse3.png" alt="" />
+							</div>
+						</div>
+						<div class="grid">
+							<h3 class="grid-title">СЕТКА:</h3>
+							<p><input type="radio" id="adapt" checked /><label for="adapt">Адаптивная</label></p>
+							<p><input type="radio" id="fixed" /><label for="fixed">Фиксированная</label></p>
+							<p><input type="radio" id="flex" /><label for="flex">Резиновая</label></p>
+						</div>
+						<div class="feature">
+							<h3 class="feature-title">ОСОБЕННОСТИ:</h3>
+							<p><input type="checkbox" name="slider" id="slider" checked /><label for="slider">Слайдер</label>
+							</p>
+							<p><input type="checkbox" name="advantages" id="advantages" /><label for="advantages">Блок
+									преимуществ</label>
+							</p>
+							<p><input type="checkbox" name="news" id="news" checked /><label for="news">Новости</label></p>
+							<p><input type="checkbox" name="gallery" id="gallery" /><label for="gallery">Галерея</label></p>
+							<p><input type="checkbox" name="basket" id="basket" /><label for="basket">Корзина</label></p>
+						</div>
+						<button class="buttonshow" type="button"><span class="btntextshow">Показать</span></button>
+					</form>
+				</div>
+				<div class="container">
+					<div class="examples">
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-sedona.png" alt="Седона" />
+							</a>
+						</div>
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-pink.png" alt="Pink" />
+							</a>
+						</div>
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-barbershop.png" alt="Барбершоп" />
+							</a>
+						</div>
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-mishka.png" alt="Mishka" />
+							</a>
+						</div>
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-aplus.png" alt="А+" />
+							</a>
+						</div>
+						<div>
+							<a class="examples-img" href="#">
+								<img src="./img/catalog/img-kvast.png" alt="Крафтовый квас" />
+							</a>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="pagination">
+				<ul class="pagination-list">
+					<li class="pagination-list__item">
+						<a><span>1</span></a>
+					</li>
+					<li class="pagination-list__item">
+						<a href="#">2</a>
+					</li>
+					<li class="pagination-list__item">
+						<a href="#">3</a>
+					</li>
+					<li class="pagination-list__item">
+						<a href="#">Следующая</a>
+					</li>
+				</ul>
+			</div>
+		</div>
+		<section class="map">
+			<a href="#">
+				<img src="./img/map.png" alt="Карта" />
+			</a>
+		</section>
+		<section class="writeus">
+			<h4 class="writeus-title">NЁRDS DESIGN STUDIO</h4>
+			<p>
+				191186, Санкт-Петербург,<br />
+				ул. Б. Конюшенная, д. 19/8<br />
+				тел. +7 (812) 275-75-75
+			</p>
+			<button class="writeus-button">Напишите нам</button>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer-content">
+			<div class="footer-social">
+				<ul class="footer-social-list">
+					<li>						
+						<a class="footer-social-list__item" href="#">													
+							<img class="circle" src="./img/socialicons/vk-icon.svg" alt="vk" >							
+						</a>						
+					</li>
+					<li>						
+						<a class="footer-social-list__item" href="#">							
+							<img class="circle" src="./img/socialicons/fb-icon.svg" alt="fb">							
+						</a>						
+					</li>
+					<li>						
+						<a class="footer-social-list__item" href="#">							
+							<img class="circle" src="./img/socialicons/insta-icon.svg" alt="insta">							
+						</a>						
+					</li>
+				</ul>
+			</div>
+			<div class="letfriend-content">
+				<h4 class="footer-letfriend-title">
+					Давайте дружить, это выгодно!<br>
+					<span class="footer-discount">Скидка 10% для друзей из социальных сетей</span>
+				</h4>
+				
+			</div>
+		</div>
+	</footer>
+</body>
 
-    <footer class="footer">
-      <section class="footer-social">
-        <ul class="footer-social-list">
-          <li>
-            <a class="footer-social-list__item" href="#">Вконтакте</a>
-          </li>
-          <li>
-            <a class="footer-social-list__item" href="#">Фейсбук</a>
-          </li>
-          <li>
-            <a class="footer-social-list__item" href="#">Инстаграм</a>
-          </li>
-        </ul>
-      </section>
-      <h4 class="footer-letfriend">
-        Давайте дружить, это выгодно!
-      </h4>
-      <p class="footer-discount">Скидка 10% для друзей из социальных сетей</p>
-    </footer>
-  </body>
 </html>
