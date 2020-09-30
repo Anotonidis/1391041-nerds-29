@@ -189,6 +189,12 @@ img {
 	justify-content: space-between;
 }
 
+.procent-text {
+	font-size: 16px;
+	line-height: 18px;
+	color: var(--grid-color);
+}
+
 .stats-content {
 	display: flex;
 	flex-direction: row;
@@ -220,10 +226,6 @@ img {
 	justify-content: space-around;
 	margin: 0 auto;
 	margin-top: 100px;
-}
-
-.stats-content span {
-	margin-top: 5px;
 }
 
 .map {
@@ -390,6 +392,10 @@ img {
 	text-transform: uppercase;
 }
 
+.examples-img {
+	padding-top: 20px;
+	
+}
 
 
 .examples {
@@ -398,6 +404,8 @@ img {
 	justify-content: space-around;
 	margin-left: 80px;
 }
+
+
 
 .pagination-list {
 	text-transform: uppercase;
