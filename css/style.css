@@ -21,6 +21,30 @@ body {
 	font-weight: 400;
 }
 
+.lg {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 310px 1fr 350px;
+	grid-gap: 10px;
+}
+
+.lg-header {
+	grid-area: header;
+}
+
+.lg-main {
+	grid-area: main;
+}
+
+.lg-footer {
+	grid-area: footer;
+}
+
+
 .header-wrap {
 	background-color: var(--backgroundcolor);
 	margin: 0 auto;
