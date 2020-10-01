@@ -23,6 +23,7 @@ body {
 
 .header-wrap {
 	background-color: var(--backgroundcolor);
+	margin: 0 auto;
 }
 
 .header-content {
@@ -306,6 +307,32 @@ img {
 }
 
 /* inner page */
+
+
+.hg {
+	display: grid;
+	grid-template-areas: 
+	"header"
+	"main"
+	"footer";
+	grid-template-columns: 1fr;
+	grid-template-rows: 50px 1fr 350px;
+	grid-gap: 10px;
+}
+
+.hg-header {
+	grid-area: header;
+}
+
+.hg-main {
+	grid-area: main;
+}
+
+.hg-footer {
+	grid-area: footer;
+}
+
+
 
 .main-header {
 	background: var(--backgroundcolor-header);
