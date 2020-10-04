@@ -11,43 +11,37 @@
 </head>
 
 <body class="page-body">
-	<div class="header-wrap lg">
-		<header class="main-header lg-header">
-			<div class="header-content">
+	<main class="main">
+		<header class="header">
+		  <div class="header-wrapper">
 				<nav class="main-navigation">
 					<a class="main-navigation-logo">
 						<img src="./img/nerds-logo.svg" width="160" height="65" alt="Логотип nerds">
 					</a>
-					<div class="main-navigation-box">
-						<ul class="main-navigation-list">
-							<li class="main-navigation-list__item"><a href="#">Студия</a></li>
-							<li class="main-navigation-list__item"><a href="#">Клиенты</a></li>
-							<li class="main-navigation-list__item"><a href="catalog.html">Магазин</a></li>
-							<li class="main-navigation-list__item"><a href="#">Контакты</a></li>
-						</ul>
+          <ul class="main-navigation-list">
+            <li class="main-navigation-list__item"><a href="#">Студия</a></li>
+            <li class="main-navigation-list__item"><a href="#">Клиенты</a></li>
+            <li class="main-navigation-list__item"><a href="catalog.html">Магазин</a></li>
+            <li class="main-navigation-list__item"><a href="#">Контакты</a></li>
+			 </ul>
+			 		<div class="main-navigation-basket">
+						<a class="basket-logo" href="#">Корзина</a>
 					</div>
-					<a class="main-navigation-basket" href="#">
-						<img class="basketlogo" src="./img/cart-icon.svg" alt="Корзина">
-						<span>Корзина</span>
-					</a>
 				</nav>
 				<section class="main-title">
 					<div>
 						<p class="main-title-text">Долго, дорого, <br> скрупулезно.</p>
 						<p>Математически выверенный дизайн<br> для вашего сайта или мобильного приложения.</p>
-						<a href='#'>
-							<div class="buttonmore">
+							<div class="main-btn">								
 								<button class="main-title-button" type="button">Узнать больше</button>
-							</div>
-						</a>
+							</div>										
 					</div>
 					<img src="./img/nerds-index-slide1.png" width="760" height="431" alt="Первый слайд">
-				</section>
-			</div>
+       		</section>
+      </div>
 		</header>
-	</div>
-	<main class="lg-main" >
-		<div class="wrapper">
+
+		<div class="wrapper wrapper--white">
 			<section class="services">
 				<div class="services-websites">
 					<img src="./img/illustration-1.png" width="300" height="146" alt="Веб-сайт">
@@ -104,67 +98,63 @@
 				</div>
 			</section>
 			<section class="customers">
-				<div class="customer-content">
-					<div class="customers-logo">
-						<div>
-							<a href="https://htmlacademy.ru/intensive/htmlcss">
-							<img src="./img/logo/logo1.svg" width="199" height="67.8" alt="Htmlacademy">
-							</a>
-						</div>
-						<div>
-							<img src="./img/logo/logo2.svg" width="209" height="90" alt="Borodinski">
-						</div>
-						<div>
-							<img src="./img/logo/logo3.svg" width="185" height="52" alt="Pink">
-						</div>
-						<div>
-							<img src="./img/logo/logo4.svg" width="173" height="84" alt="Mishka">
-						</div>
-					</div>
-				</div>
+        <div class="customers__item">
+          <a href="https://htmlacademy.ru/intensive/htmlcss">
+          <img src="./img/logo/logo1.svg" width="199" height="67.8" alt="Htmlacademy">
+          </a>
+        </div>
+        <div class="customers__item">
+          <img src="./img/logo/logo2.svg" width="209" height="90" alt="Borodinski">
+        </div>
+        <div class="customers__item">
+          <img src="./img/logo/logo3.svg" width="185" height="52" alt="Pink">
+        </div>
+        <div class="customers__item">
+          <img src="./img/logo/logo4.svg" width="173" height="84" alt="Mishka">
+        </div>
 			</section>
 		</div>
-		<section class="map">
-			<a href="#">
+    <section class="map">
 				<img src="./img/map.png" alt="Карта">
-			</a>
-		</section>
-		<section class="writeus">
-			<h4 class="writeus-title">NЁRDS DESIGN STUDIO</h4>
-			<p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
-			<button class="writeus-button">Напишите нам</button>
-		</section>
+      <div class="writeus">
+        <h4 class="writeus-title">NЁRDS DESIGN STUDIO</h4>
+        <p>191186, Санкт-Петербург,<br>ул. Б. Конюшенная, д. 19/8<br> тел. +7 (812) 275-75-75</p>
+        <button class="writeus-button">Напишите нам</button>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <ul class="footer-social" >
+        <li>
+          <a class="social-icon" href="#">
+            <svg width="27" height="15" viewBox="0 0 27 15" fill="none">
+					<path d="M16.138 11.51C17.094 11.201 18.318 13.55 19.621 14.449C20.599 15.13 21.348 14.983 21.348 14.983L24.821 14.933C24.821 14.933 26.636 14.821 25.778 13.379C25.707 13.259 25.275 12.31 23.193 10.357C21.016 8.31404 21.311 8.64504 23.932 5.11304C25.529 2.96004 26.168 1.64504 25.968 1.08504C25.776 0.546037 24.603 0.686037 24.603 0.686037L20.69 0.713037C20.309 0.714037 19.986 0.832037 19.839 1.22804C19.836 1.23204 19.218 2.89404 18.394 4.30704C16.653 7.29604 15.958 7.45504 15.67 7.26804C15.009 6.83504 15.176 5.53104 15.176 4.60404C15.176 1.70704 15.608 0.499037 14.33 0.187037C13.903 0.0830374 13.591 0.0150374 12.502 0.00503741C11.11 -0.0159626 9.92797 0.00503743 9.25797 0.334037C8.81297 0.557037 8.47197 1.04604 8.67897 1.07404C8.93897 1.10904 9.52197 1.23404 9.83397 1.66004C10.235 2.21204 10.223 3.44904 10.223 3.44904C10.223 3.44904 10.452 6.86004 9.68297 7.28304C9.15497 7.57304 8.43297 6.98104 6.87997 4.26704C6.08697 2.87904 5.48797 1.34504 5.48797 1.34504C5.48797 1.34504 5.37197 1.06004 5.16197 0.904037C4.91197 0.719037 4.56197 0.660037 4.56197 0.660037L0.84797 0.684037C0.84797 0.684037 0.28997 0.700037 0.0849697 0.946037C-0.0970303 1.16404 0.0699697 1.61404 0.0699697 1.61404C0.0699697 1.61404 2.97897 8.49504 6.27297 11.961C9.29297 15.143 12.725 14.932 12.725 14.932H14.28C14.28 14.932 14.749 14.878 14.989 14.62C15.213 14.38 15.203 13.929 15.203 13.929C15.203 13.929 15.172 11.82 16.138 11.51Z" fill="white"/>
+				</svg>					
+          </a>
+        </li>
+        <li>
+          <a class="social-icon" href="#">
+            <svg width="12" height="22" viewBox="0 0 12 22" fill="none">
+					<path d="M12 4V0H8C5.79086 0 4 1.79086 4 4V8H0V12H4V22H8V12H12V8H8V4H12Z" fill="white"/>
+				</svg>					
+          </a>
+        </li>
+        <li>
+          <a class="social-icon" href="#">
+            <svg width="21" height="21" viewBox="0 0 21 21" fill="none">
+					<path fill-rule="evenodd" clip-rule="evenodd" d="M3 0H18C19.65 0 21 1.35 21 3V18C21 19.65 19.65 21 18 21H3C1.35 21 0 19.65 0 18V3C0 1.35 1.35 0 3 0ZM14 10.5C14 8.57 12.43 7 10.5 7C8.57 7 7 8.57 7 10.5C7 12.43 8.57 14 10.5 14C12.43 14 14 12.43 14 10.5ZM3 18V9H4.181C4.0626 9.49127 4.00186 9.99467 4 10.5C4 14.0899 6.91015 17 10.5 17C14.0899 17 17 14.0899 17 10.5C16.9986 9.99464 16.9379 9.49118 16.819 9H18V18H3ZM14 7H18V3H14V7Z" fill="white"/>
+				</svg>					
+          </a>
+        </li>
+      </ul>
+      <h4 class="footer-letfriend-title">
+        Давайте дружить, это выгодно!<br>
+        <span class="footer-discount">Скидка 10% для друзей из социальных сетей</span>
+      </h4>
+    </footer>
+
 	</main>
-	<footer class="footer lg-footer">
-		<div class="footer-content">
-			<div class="footer-social">
-				<ul class="footer-social-list">
-					<li>	
-						<a href="#">													
-							<img class="circle" src="./img/socialicons/vk-icon.svg" alt="vk" >							
-						</a>
-					</li>
-					<li>
-						<a href="#">							
-							<img class="circle" src="./img/socialicons/fb-icon.svg" alt="fb">							
-						</a>						
-					</li>
-					<li>						
-						<a href="#">													
-							<img class="circle"  src="./img/socialicons/insta-icon.svg" alt="inst" >							
-						</a>					
-					</li>					
-				</ul>
-			</div>
-			<div class="letfriend-content">
-				<h4 class="footer-letfriend-title">
-					Давайте дружить, это выгодно!<br>
-					<span class="footer-discount">Скидка 10% для друзей из социальных сетей</span>
-				</h4>				
-			</div>
-		</div>
-	</footer>
-	<section class="modal">
+	<!-- <section class="modal">
 		<div class="modalframe">
 			<form action="#">
 				<h2>Напишите нам</h2>
@@ -177,7 +167,10 @@
 				<button class="modalbutton" type="submit">Отправить</button>
 			</form>
 		</div>
-	</section>
+	</section> -->
+
 </body>
 
 </html>
+
+
