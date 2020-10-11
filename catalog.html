@@ -134,19 +134,25 @@
                   >
                 </p>
               </div>
-              <button class="buttonshow" type="button">
-                <span class="btntextshow">Показать</span>
-              </button>
+              <button class="buttonshow" type="button">Показать</button>
             </form>
           </div>
           <div class="content__examples">
             <div class="sort-price">
               <h3 class="sort-title">СОРТИРОВАТЬ:</h3>
               <ul class="sort-list">
-                <li class="sort-list__item"><a href="#">По цене</a></li>
+                <li class="sort-list__item current-list-item"><a href="#">По цене</a></li>
                 <li class="sort-list__item"><a href="#">По типу</a></li>
-                <li class="sort-list__item"><a href="#">По названию</a></li>
-              </ul>
+					 <li class="sort-list__item"><a href="#">По названию</a></li>
+					 <li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+						<path d="M5.5 10L0 0H11" fill="#231F20"/>
+						</svg></a></li>
+						<li><a href="#"><svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+							<g opacity="0.2">
+							<path d="M5.5 0L0 10H11L5.5 0Z" fill="#A6A6A6"/>
+							</g>
+						</svg></a></li>
+				  </ul>					
             </div>
             <div class="cards">
               <div class="card">
@@ -217,19 +223,18 @@
               </div>
             </div>
             <ul class="pagination-list">
-              <li>
-                <a class="pagination-list__item"><span>1</span></a>
+              <li class="pagination-list__item current-item">
+                <a>1</a>
               </li>
-              <li>
-                <a class="pagination-list__item" href="#">2</a>
+              <li class="pagination-list__item">
+                <a href="#">2</a>
               </li>
-              <li>
-                <a class="pagination-list__item" href="#">3</a>
-              </li>
-              <li>
-                <a class="pagination-list__item pagination-next" href="#"
-                  >Следующая</a
-                >
+              <li class="pagination-list__item">
+                <a href="#">3</a>
+				  </li>				  
+              <li class="pagination-list__item">
+                <a href="#"
+                  >Следующая</a>
               </li>
             </ul>
           </div>
