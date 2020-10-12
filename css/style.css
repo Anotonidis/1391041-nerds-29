@@ -343,31 +343,37 @@ img {
   line-height: 40px;
 }
 
+.customers {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	position: relative;
+	margin: 0 auto;
+	margin-bottom: 80px;
+	border-top: 2px solid var(--backgroundcolor);
+	border-bottom: 2px solid var(--backgroundcolor);
+ }
+
+
 .customers__item {
   padding: 45px;
-  opacity: 0.2;   
-}
-
-.customers__item1:hover {
-	fill: black;
+   opacity: 0.2;
 }
 
 .customers__item:hover {
 	opacity: 1;
 }
 
-.customers__item:active {
-	opacity: 0.1;
+.item__one::after {
+	content: "";
+	position: absolute;	
+	width: 2px;
+	height: 52px;	
+	background-color: var(--backgroundcolor);
 }
 
-.customers {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  margin: 0 auto;
-  margin-bottom: 80px;
-  border-top: 2px solid var(--backgroundcolor);
-  border-bottom: 2px solid var(--backgroundcolor);
+.customers__item:active {
+	opacity: 0.1;
 }
 
 .map {
