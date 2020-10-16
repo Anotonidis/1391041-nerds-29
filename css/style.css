@@ -20,6 +20,7 @@
   --btnshowhover-color: #DFDFDF;
   --btnshowactive-color: #D5D5D5;
   --paginationbtncurr-color: #DBDBDB;
+  --cardblock-color:  #4D4D4D;
 }
 
 body {
@@ -31,6 +32,20 @@ body {
   line-height: 24px;
   font-weight: 400;
 }
+
+.visually-hidden {
+	position: absolute;
+	width: 1px;
+	height: 1px;
+	margin: -1px;
+	border: 0;
+	padding: 0;
+	white-space: nowrap;
+	clip-path: inset(100%);
+	clip: rect(0 0 0 0);
+	overflow: hidden;
+ }
+
 
 .main {
   display: grid;
@@ -471,12 +486,6 @@ img {
 	text-align: center;
 }
 
-.filter-item {
-  margin: 0;
-  padding: 0;
-  border: none;
-}
-
 .range-controls {
   position: relative;
   height: 41px;
@@ -541,7 +550,7 @@ img {
   width: 60px;
   padding: 10px;
   margin-left: 10px;
-  text-align: center;
+  text-align: center;  
   color: var(--grid-color);
   border: none;
   border-radius: 5px;
@@ -550,17 +559,94 @@ img {
   font-size: inherit;
 }
 
-.grid p {
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--grid-color);
+.filter ul {
+	padding: 0;
+  margin: 0;
+  list-style: none;
+  line-height: 18px;
 }
 
-.feature p {
-  font-size: 16px;
-  line-height: 19px;
-  color: var(--grid-color);
-}
+.filter fieldset {
+	padding: 0;
+	margin: 0;
+	margin-bottom: 30px;
+	border: none;
+ }
+ 
+ .filter fieldset:first-child {
+	margin-bottom: 35px;
+ }
+ 
+ .filter legend {
+	margin-bottom: 26px;
+	font-size: 18px;
+	font-weight: bold;
+	line-height: 30px;
+	text-transform: uppercase;
+ }
+ 
+
+.filter-option {
+	margin-bottom: 16px;
+	padding-left: 45px;
+	opacity: 0.4;
+ }
+ 
+ .filter-option:hover {
+	 opacity: 1;
+ }
+
+ .filter-option label {
+	position: relative;
+	display: block;
+	cursor: pointer;
+	user-select: none;
+ }
+
+ .filter-input-radio + label::before {
+	content: "";
+	position: absolute;
+	left: -42px;
+	top: -1px;
+	width: 16px;
+	height: 16px;
+	border: 2px solid var(--basic-black);
+	border-radius: 50%;
+ }
+
+ .filter-input-radio:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 5px;
+	left: -36px;
+	width: 8px;
+	height: 8px;
+	background-color:var(--basic-black);
+	border-radius: 50%;
+ }
+
+ .filter-input-checkbox + label::before {
+	content: "";
+	position: absolute;
+	left: -40px;
+	top: 2px;
+	width: 23px;
+	height: 23px;
+	border: 2px solid var(--basic-black);
+	border-radius: 2px;
+ }
+ 
+ .filter-input-checkbox:checked + label::after {
+	content: "";
+	position: absolute;
+	top: 2px;
+	left: -40px;
+	width: 25px;
+	height: 25px;
+	background-image: url("../img/checkbox-on.svg");
+	background-repeat: no-repeat;
+	background-position: 0 0;
+ }
 
 .buttonshow {
 	background-color: var(--backgroundcolor);
@@ -628,13 +714,37 @@ img {
 	opacity: 1;
 }
 
+
 .cards {
   display: flex;
   flex-wrap: wrap;
-  margin-bottom: 50px;
+  margin-bottom: 50px;  
+}
+
+.card-block {
+	width: 360px;
+	height: 40px;
+	background-color: var(--cardblock-color);
+	opacity: 0.12;
+	border-radius: 5px 5px 0 0;
+	margin-bottom: 1px;	
+}
+
+.circle {
+	width: 14px;
+	height: 14px;
+	background-color: var(--button-text);	
+	border-radius: 50%;
+	margin: 13px 3px 0 0 ;	
+	display: inline-block;
+}
+
+.circle:first-child {
+	margin-left: 13px;
 }
 
 .card {
+	
   margin-right: 40px;
   margin-bottom: 10px;
 }
