@@ -132,7 +132,7 @@ img {
 .basket-logo::before {
   content: "";
   position: absolute;
-  top: 3px;
+  top: 1px;
   left: -40px;
   width: 15px;
   height: 15px;
@@ -309,7 +309,13 @@ img {
   font-weight: 500;
   font-size: 45px;
   line-height: 45px;
+  width: 650px;
 }
+
+.about-description {
+	margin-right: 50px;
+}
+
 
 .about-subtitle {
   text-transform: uppercase;
@@ -327,7 +333,7 @@ img {
   content: "";
   position: absolute;
   top: 10px;
-  left: -35px;
+  left: -40px;
   width: 25px;
   height: 2px;
   background-color: var(--button-red);
@@ -336,6 +342,7 @@ img {
 .accuracy-subtitle {
   text-transform: uppercase;
   font-weight: bold;
+  margin-left: 10px;
 }
 
 .procent-text {
@@ -347,6 +354,7 @@ img {
 .stats-content {
   display: flex;
   justify-content: space-between;
+  padding-right: 10px;
 }
 
 .stats-content p {
@@ -354,22 +362,27 @@ img {
   margin-top: 15px;
 }
 
+.about-stats {
+	margin-left: 50px;
+}
+
+
 .about-stats p {
   font-weight: bold;
   font-size: 45px;
   line-height: 64px;
+  
 }
 
 .about-stats h4 {
   margin-bottom: 0;
 }
 
-.procent1,
-.procent2,
-.procent3 {
+.procent {
   font-weight: bold;
   font-size: 26px;
   line-height: 40px;
+  margin-left: -10px
 }
 
 .customers {
@@ -382,6 +395,8 @@ img {
   border-top: 2px solid var(--backgroundcolor);
   border-bottom: 2px solid var(--backgroundcolor);
 }
+
+
 
 .customers__item {
   padding: 45px;
