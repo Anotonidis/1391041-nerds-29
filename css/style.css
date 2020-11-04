@@ -29,7 +29,7 @@
  }
  
  body {
-	min-width: 1157px;
+	min-width: 1160px;
 	margin: 0;
 	padding: 0;
 	font-family: "Roboto", Arial, sans-serif;
@@ -91,13 +91,13 @@
  }
  
  .header-wrapper {
-	 width: 1325px;
+	 width: 1160px;
 	 margin: 0 auto;
 	}
  
  .wrapper {
 	grid-area: content;
-	width: 1200px;
+	width: 1160px;
 	margin: 0 auto;
 	background: var(--button-text);
  }
@@ -134,8 +134,7 @@
  }
  
  .main-navigation-logo {
-	margin-right: 237px;
-	margin-left: 30px;
+	margin-right: 237px;	
 	}
  
  .main-navigation-logo:active {
@@ -430,13 +429,13 @@
 }
  
  .our-location-block {
-	 width: 221px;
-	 text-align: left;
-	 background-color: var(--button-text);
-	 position: relative;
-	 top: 80px;
-	 left: 139px;
-	 padding: 31px 52px;
+	width: 221px;
+	text-align: left;
+	background-color: var(--button-text);
+	position: relative;
+	top: 80px;
+	left: 200px;
+	padding: 31px 52px;
 	}
  
  .our-location-header {
@@ -489,13 +488,14 @@
 	border-radius: 50%;
  }
  
- .footer-social {		
+ .footer-social {
    display: flex;
    flex-wrap: wrap;
+   padding: 0;
    justify-content: space-between;
    width: 281px;
    margin-top: 57px;
-   margin-right: 70px;
+   margin-right: 119px;
    list-style: none;
 }
  
@@ -515,7 +515,7 @@
 	font-weight: bold;
 	font-size: 36px;
 	line-height: 36px;
-	margin: 50px 0px 0px 8px;	
+	margin: 50px 0px 0px 0px;	
 	}
  
  .footer-discount {
@@ -583,8 +583,7 @@
  }
  
  .price-title {
-	margin: 0px;
-	margin-left: -50px;
+	margin: 0px;	
 	margin-bottom: 63px;
 	}
  
@@ -614,15 +613,13 @@
  
  .filter ul {
 	padding: 0;
-	margin: 0;
-	margin-left: -61px;
+	margin: 0;	
 	list-style: none;
 	line-height: 18px;
 	}
  
  .filter legend {
-	margin-bottom: 20px;
-	margin-left: -61px;
+	margin-bottom: 20px;	
 	font-size: 18px;
 	font-weight: bold;
 	line-height: 30px;
@@ -657,16 +654,17 @@
 	}
  
  .filter-item.filter-item--range {
-	margin-bottom: 72px;
-	margin-left: -50px;
+	margin-bottom: 72px;	
 	}
  
  .filter-item.filter-item--radio {
 	margin-bottom: 35px;
+	margin-left: -14px;
 	}
  
  .filter-item.filter-item--checkbox {
 	margin-bottom: 23px;
+	margin-left: -14px;
 	}
  
  .filter-option:hover {
@@ -729,8 +727,7 @@
 	height: 50px;
 	border-radius: 3px;
 	text-transform: uppercase;
-	border: none;
-	margin-left: -50px;
+	border: none;	
 	}
  
  .buttonshow:hover {
@@ -773,7 +770,7 @@
  }
  
  .content__examples {
-	margin-left: 140px;
+	margin-left: 60px;
  }
  
  .sort-list__item a {
