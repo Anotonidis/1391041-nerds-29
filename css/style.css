@@ -57,7 +57,7 @@ body {
 	"content"
 	"map"
 	"footer";
-	grid-template-rows: 545px 1fr 205px 215px;
+	grid-template-rows: 521px 1fr 205px 215px;
 	
 }
 
@@ -366,7 +366,8 @@ img {
 	font-weight: bold;
 	font-size: 26px;
 	line-height: 40px;
-	margin-left: -10px
+	margin-left: -10px;
+	vertical-align: text-top;
 }
 
 .customers {
@@ -430,6 +431,10 @@ img {
 	position: relative;
 }
 
+.map_holder a {
+	color: var(--ourlocationdesc-color)
+}
+
 .info_holder {
 	position: absolute;
 	left: 0;
@@ -480,6 +485,15 @@ img {
 	color: var(--button-text);
 	border: none;
 	cursor: pointer;
+}
+
+.writeus-button:hover {
+	background-color: var(--buttormore-red);
+}
+
+.writeus-button:active {
+	background-color: var(--socialicon-red);	
+	color: var(--slidebtnactive-color);	
 }
 
 .letfriend {
@@ -741,7 +755,7 @@ img {
 	border-radius: 3px;
 	text-transform: uppercase;
 	border: none;	
-	}
+}
 
 .buttonshow:hover {
 	background-color: var(--btnshowhover-color);
@@ -905,6 +919,7 @@ img {
 	border-radius: 50%;
 	margin: 13px 3px 0 0;
 	display: inline-block;
+	vertical-align: baseline;
 }
 
 .circle:first-child {
