@@ -864,7 +864,7 @@ img {
 	display: none;
 }
 
-.frametitle {
+.frame-title {
 	font-weight: bold;
 	font-size: 18px;
 	line-height: 30px;
@@ -873,14 +873,14 @@ img {
 	color: var(--basic-black);
 }
 
-.frametext {
+.frame-text {
 	color: var(--ourlocationdesc-color);
 	font-size: 16px;
 	line-height: 18px;
 	text-align: center;
 }
 
-.framebutton {
+.frame-button {
 	width: 219px;
 	height: 50px;
 	background: var(--button-red);
@@ -894,18 +894,12 @@ img {
 	top: 100px; left: 0; bottom: 0px; right: 0;	    
 }
 
-.framebtnprice {
+.frame-btn-price {
 	margin: 13px auto;
 }
 
-.framebtnprice:after {
+.frame-btn-price:after {
 	content: "\20BD";	 
-}
-
-.buttonprice {
-	font-size: 16px;
-	line-height: 18px;
-	font-weight: 500;
 }
 
 .card:hover {
