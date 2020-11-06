@@ -222,11 +222,12 @@ img {
 	line-height: 20px;
 	text-transform: uppercase;
 	font-weight: bold;	
-	}
+}
 
 .web-button,
 .app-button,
 .present-button {
+	display: block;
 	width: 160px;
 	height: 50px;
 	border-radius: 3px;
@@ -235,7 +236,7 @@ img {
 	margin-top: 10px;
 	text-align: center;
 	line-height: 50px;
-	}
+}
 
 .web-button {
 	background: var(--button-red);
