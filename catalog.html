@@ -44,7 +44,7 @@
          <div class="wrapper wrapper--catalog">
             <div class="content">
                <div class="content__form">
-                  <h3 class="price-title">СТОИМОСТЬ:</h3>
+                  <h3 class="price-title">Стоимость:</h3>
                   <form class="filter" method="get" action="https://echo.htmlacademy.ru">
                      <div class="filter-item filter-item--range">
                         <div class="range-filter">
@@ -56,8 +56,8 @@
                               <div class="toggle toggle-max" tabindex="0" style="left: 60%;"></div>
                            </div>
                            <div class="price-controls">
-                              <label class="min-price"> от <input type="number" name="min-price" value="0" /> </label>
-                              <label class="max-price"> до <input type="number" name="max-price" value="15000" /> </label>
+                              <label class="min-price"> от <input type="number" name="min-price" value="0"> </label>
+                              <label class="max-price"> до <input type="number" name="max-price" value="15000"> </label>
                            </div>
                         </div>
                      </div>
@@ -66,15 +66,15 @@
                            <legend>Сетка:</legend>
                            <ul>
                               <li class="filter-option filter-radio">
-                                 <input class="visually-hidden filter-input-radio" type="radio" id="adapt" name="grid" value="adaptive" checked />
+                                 <input class="visually-hidden filter-input-radio" type="radio" id="adapt" name="grid" value="adaptive" checked>
                                  <label for="adapt">Адаптивная</label>
                               </li>
                               <li class="filter-option filter-radio">
-                                 <input class="visually-hidden filter-input-radio" type="radio" id="fixed" name="grid" value="fixed" />
+                                 <input class="visually-hidden filter-input-radio" type="radio" id="fixed" name="grid" value="fixed">
                                  <label for="fixed">Фиксированная</label>
                               </li>
                               <li class="filter-option filter-radio">
-                                 <input class="visually-hidden filter-input-radio" type="radio" id="flex" name="grid" value="flex" />
+                                 <input class="visually-hidden filter-input-radio" type="radio" id="flex" name="grid" value="flex">
                                  <label for="flex">Резиновая</label>
                               </li>
                            </ul>
@@ -85,23 +85,23 @@
                            <legend>Особенности:</legend>
                            <ul>
                               <li class="filter-option filter-checkbox">
-                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="slider" checked />
+                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="slider" name="features" value="slider" checked>
                                  <label for="slider">Слайдер</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="advantages" />
+                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="advantages" name="features" value="advantages">
                                  <label for="advantages">Блок преимуществ</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="news" checked />
+                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="news" name="features" value="news" checked>
                                  <label for="news">Новости</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="gallery" />
+                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="gallery" name="features" value="gallery">
                                  <label for="gallery">Галерея</label>
                               </li>
                               <li class="filter-option filter-checkbox">
-                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="basket" />
+                                 <input class="visually-hidden filter-input-checkbox" type="checkbox" id="basket" name="features" value="basket">
                                  <label for="basket">Корзина</label>
                               </li>
                            </ul>
@@ -112,7 +112,7 @@
                </div>
                <div class="content__examples">
                   <div class="sort-price">
-                     <h3 class="sort-title">СОРТИРОВАТЬ:</h3>
+                     <h3 class="sort-title">Сортировать:</h3>
                      <ul class="sort-list">
                         <li class="sort-list__item current-list-item">
 									<a href="#">По цене</a>
@@ -301,10 +301,10 @@
                         Nёrds Design Studio
                      </div>
                      <div class="our-location-description">
-                        <p>191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
+                        <p class="our-location-text">191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8</p>
                         <a href="tel:+78122757575">тел. +7 (812) 275-75-75</a>
                      </div>
-                     <button class="writeus-button" type="button">Напишите нам</button>
+                     <button class="write-us-button" type="button">Напишите нам</button>
                   </div>
                </div>
             </div>
@@ -343,7 +343,7 @@
       </footer>
       <div class="modal-holder">
          <section class="modal">
-            <h2 class="modal__title">Напишите нам</h2>
+            <p class="modal__title">Напишите нам</p>
             <form class="modal-form" action="#">
                <p class="modal__item">
                   <label for="modal-name">Ваше имя:</label>
@@ -358,7 +358,7 @@
                   <textarea class="modal-textarea" name="modaltext" id="modal-text" placeholder="В свободной форме"></textarea>
                </p>
             </form>
-            <button class="modalbutton" type="submit">Отправить</button>
+            <button class="modal-button" type="submit">Отправить</button>
             <button class="modal-close" type="button" aria-label="Закрыть"></button>
          </section>
       </div>
