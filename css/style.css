@@ -1086,6 +1086,10 @@ img {
 	border: none; 
 }
 
+.modal-show {
+	display: block;  
+}
+
 .modal-form {
 	padding: 0 100px;
 	display: flex;
